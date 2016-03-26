@@ -1,0 +1,15 @@
+State the goals and outcomes of the course.
+
+Describe the projects.
+    Give short descriptions so we can start writing use cases.
+
+[Optional]
+    Ask if students have specific projects in mind.
+    Make groups.
+
+Lecture Content:
+    Software development life cycle.
+    The role of UML in software development life cycle.
+    Functional requirements.
+    Quality requirements.
+    Use cases for capturing functional requirements.

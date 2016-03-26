@@ -1,0 +1,12 @@
+This is the initial list of proposed projects.
+
+1.  Book My Show
+2.  Make My Trip
+3.  Surprise, Quiz!
+4.  My Spring Journal
+5.  Make My Slide Deck
+6.  Spring Projects Tracker
+7.  Farm to Home
+8.  Summer in Manipal (Personal Calendar)
+9.  Sync my Lectures (Mobile-Web)
+10. Spring Twaves (Mobile) 
