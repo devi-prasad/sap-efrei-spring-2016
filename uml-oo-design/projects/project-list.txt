@@ -9,4 +9,4 @@ This is the initial list of proposed projects.
 7.  Farm to home
 8.  Summer in Manipal (Personal Calendar)
 9.  Sync my lectures (Mobile-Web)
-10. Spring Twaves (Mobile) 
+10. Spring Notes (Mobile-Web) 
