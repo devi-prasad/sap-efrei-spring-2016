@@ -1,0 +1,21 @@
+The Background
+----------------
+The Little Lillies is a loved and respected primary education school. Children get admission to this primary school after their preschool. At present, about five hundred children attend Little Lillies. The age of the children ranges from five years to thirteen years, starting from Grade 1 to Grade 7. Little Lillies has about 35 well-educated and well-trained full-time teachers.
+
+The school works from 9am to 3pm, five days a week.
+
+Littl Lillies owns about twelve buses. Buses travel from and to different locations of the city. About 95% of the children, faculty, and staff commute by these buses everyday. The school operates these buses twice each day - morning and noon.
+
+In the recent days, the school management has been receiving numerous complaints about its bus drivers. Parents and faculty have reported incidents of bad driving. Cases involve violating speed limits in residential areas, hospitals, schools and accident prone areas, and risking level crossings, to name a few. The parents and faculty are concerned about the safety of children traveling in these buses. 
+
+After some technical consultation, the school management has resolved to employ a simple monitoring solution. The idea is to measure the "Driver Safety Index" - a measure of how good the driver manages the transit or the journey, everyday. The technical solution is to mount a Android tablet above the dashboard of the vehicle. This tablet is runs a software that constantly monitors and alerts the driver about routes, traffic conditions, hot spots, speed limits, regulatory requirements and such conditions.
+
+The software solution relies on the continuous availability of Google Maps for tracking routes and hot spots. It integrates data from various sensors and services in the tablet hardware - the accelerometer, the gyroscope, and location services. 
+
+Before the journey, the software on the tablet contacts a Web service and loads information pertaining to the scheduled journey. This includes driver's information, the actual route, hot spots, etc. During the journey, it displays the upcoming hot spots, displays alerts in the form of audio clips and screen flashing. It also records and displays the current count of incidences, and prompts the driver appropriately.
+
+
+The Requirement
+----------------
+The requirement now is to carefully model the solution and to come up with a detailed UML design document.
+
