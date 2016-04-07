@@ -17,5 +17,10 @@ Before the journey, the software on the tablet contacts a Web service and loads 
 
 The Requirement
 ----------------
-The requirement now is to carefully model the solution and to come up with a detailed UML design document.
+The software is required to record the time of application of hard breaks, sudden or abrupt turns. When a hard break is detected, the software must initiate recording a ten seconds video, from the back-facing camera of the tablet. This video is intended to capture the condition on the road (presence of obstacles, pot holes, etc) when the incidence occurred.
+
+Assignment
+------------
+The assignment is to carefully model the solution and to come up with a reasonably good UML design document.
+
 
