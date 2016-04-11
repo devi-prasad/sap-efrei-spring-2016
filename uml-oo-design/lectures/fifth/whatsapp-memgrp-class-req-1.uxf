@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>80</y>
+      <w>170</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Person
+--
+ - phone_num
+ - name
+--
+
+ + sendMessage()
+ + mute()
+ + call()
+ + setProfilePicture()
+ + setStatus()
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>80</y>
+      <w>190</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Group
+--
+- name
+--
+
++ addMember()
++ getMembers()
++ sendMessage()
++ mute()
++ delete()
++ setIcon()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>140</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1..256                     .</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
