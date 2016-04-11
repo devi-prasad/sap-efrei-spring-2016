@@ -67,12 +67,12 @@
     </coordinates>
     <panel_attributes>Message
 --
-- text:          String
-- images:     Array&lt;URL&gt;
-- video_clip: Array&lt;URL&gt;
-- audio_clip: Array&lt;URL&gt;
-- date:          Date
-- status:        int
+- text:            String
+- images:       Array&lt;URL&gt;
+- video_clips: Array&lt;URL&gt;
+- audio_clips: Array&lt;URL&gt;
+- date:           Date
+- status:         int
 --
 
  + send()
