@@ -1,0 +1,16 @@
+Broadcast a Message
+
+Main Success Scenario
+1. User chooses the group to broadcast a message.
+2. User edits the message.
+3. User sends the message.
+
+Postcondition:
+  1. Those recipients who have added this number in their contacts will receive
+     the new message.
+
+Guarantees:
+  1. The recipient will not know that the same message has been broadcast to
+     a group.
+
+

@@ -1,0 +1,19 @@
+Create a Broadcast Group
+
+Main Success Scenario
+1. User chooses to create a broadcast group.
+2. User adds contacts to the group.
+3. User saves the group.
+4. system checks the group size.
+
+Preconditions:
+2a: type of the contacts in the group
+    1. contact cannot be a group
+
+Postconditions:
+4a: number of contacts in the group
+    1. there must be at the least two contacts in the group
+
+Note:
+    The recipient must have added this number in their contacts. A broadcast
+    message will not be received otherwise.
