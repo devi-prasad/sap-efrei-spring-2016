@@ -35,7 +35,7 @@
       <w>140</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>:MessageStore</panel_attributes>
+    <panel_attributes>_:MessageStore_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
