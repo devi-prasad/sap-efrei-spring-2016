@@ -1,0 +1,30 @@
+(1) File states
+    ------------
+Open for read
+  read*
+  read -> BadOperationException
+  ExceptionEOF
+  close
+
+Open for write
+  write*
+  read -> BadOperationException
+  ExceptionEOF
+  close
+
+(2) Device Lock and Unlock
+    -----------------------
+The device locks for 5 minutes if three successive attempts to unlock 
+the screen fail.
+
+(3) History States
+    ---------------
+If the power supply stops when the washing machine is running, it 
+remembers the state. When the power is supplied again, it starts from the same
+state where it had left.
+
+(4) Incoming Call
+    ------------- 
+No matter what application is currently in the foreground, on an incoming call
+the Phone Dialer application is launched.
+
