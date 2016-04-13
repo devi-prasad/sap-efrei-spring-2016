@@ -88,7 +88,7 @@
       <w>30</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
 </panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -97,16 +97,16 @@
     <id>UMLClass</id>
     <coordinates>
       <x>260</x>
-      <y>230</y>
+      <y>210</y>
       <w>190</w>
-      <h>80</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>Chat
 --
 --
-
 + clear()
-</panel_attributes>
++ forward()
++ backup()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -114,21 +114,21 @@
     <coordinates>
       <x>160</x>
       <y>170</y>
-      <w>200</w>
-      <h>80</h>
+      <w>120</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>180.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>100.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
+      <x>440</x>
       <y>170</y>
-      <w>190</w>
-      <h>80</h>
+      <w>130</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;60.0;170.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;110.0;110.0;110.0;10.0</additional_attributes>
   </element>
 </diagram>
