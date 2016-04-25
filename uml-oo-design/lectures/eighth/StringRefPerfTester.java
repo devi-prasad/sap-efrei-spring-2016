@@ -14,7 +14,7 @@ class StringRefPerfTester {
 
         long end = System.currentTimeMillis();
 
-        System.out.println(end - start);
+        System.out.format("timeStringConcat: %d\n", end - start);
 	}
     
     private static void timeStringBuilderConcat() {
@@ -29,7 +29,7 @@ class StringRefPerfTester {
 
         long end = System.currentTimeMillis();
 
-        System.out.println(end - start);
+        System.out.format("timeStringBuilderConcat: %d\n", end - start);
     }
 	private static void runTests() {
         timeStringConcat();
