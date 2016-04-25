@@ -2,7 +2,7 @@
     ------------
 Open for read
   read*
-  read -> BadOperationException
+  write -> BadOperationException
   ExceptionEOF
   close
 
