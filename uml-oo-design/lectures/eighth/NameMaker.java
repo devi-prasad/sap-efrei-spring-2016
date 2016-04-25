@@ -1,10 +1,19 @@
 import org.json.*;
 
+/**
+ * A name consists of three parts: first-middle-last.
+ * the first component MUST have 5 characters, 
+ * the middle component is a four digit positive number, and
+ * the last component is a 3 character string.
+ *
+ */
 class NameMaker {
-    private String first, middle, last;
+    private String first, last;
+    private int middle;
 
     public NameMaker() {
-        first = middle = last = null;
+        first = last = null;
+        middle = 0;
     }
 
     public NameMaker setFirst(String s) {
@@ -20,7 +29,7 @@ class NameMaker {
 
     public NameMaker setMiddle(int i) {
         if (i >= 1000 && i <= 9999) {
-            middle = String.valueOf(i);
+            middle = i;
         }
 
         return this;
@@ -38,10 +47,12 @@ class NameMaker {
     }
 
     public boolean readyToRock() {
-        return (first != null) && (middle != null) && (last != null);
+        return (first != null) && (middle > 0) && (last != null);
     }
 
     public Name toName() {
+        assert(readyToRock());
+
         if (readyToRock()) {
             return new Name(first + middle + last);
         }
@@ -50,18 +61,30 @@ class NameMaker {
     }
 
     public JSONObject toJSON() {
+        assert(readyToRock());
+
     	if (readyToRock()) {
-    		String str = "{ \"first\": " + first + ","
-    		              + "\"middle\": " + middle + "," 
-    		              + "\"last\" :" + last + "}";
-    		JSONObject obj = new JSONObject(str);
+            StringBuilder jsonsb = new StringBuilder();
+            jsonsb.append("{ \"first\": " )
+              .append(first)
+              .append(", ")
+              .append("\"middle\": " )
+              .append(middle)
+              .append(", ")
+              .append("\"last\" :" )
+              .append(last)
+              .append("}");
+
+            JSONObject obj = new JSONObject(jsonsb.toString());
     		return obj;
     	}
+
         return null;
     }
 
     public String toXML() {
     	//TODO: FIX ME!!!
+        assert(readyToRock());
 
         return null;
     }
@@ -70,8 +93,8 @@ class NameMaker {
     public static void main(String[] args) {
         NameMaker nm = new NameMaker();
         nm.setFirst(" abcde ")
-        .setMiddle(4567)
-        .setLast(" XYZ  ");
+          .setMiddle(4567)
+          .setLast(" XYZ  ");
 
         JSONObject json = nm.toJSON();
         String f = json.getString("first");
