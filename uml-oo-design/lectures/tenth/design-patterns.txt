@@ -1,0 +1,127 @@
+What are patterns?
+What are design patterns?
+Why is it important to know about them?
+How do we describe them?
+How do we use them?
+
+Pattern
+  a repeated form (especially used to decorate something).
+  regular and repeated way in which something happens or is done.
+  something that happens in a regular and repeated way.
+  ​particular way in which something is ​organized, or ​happens.
+
+Examples from the World of Software
+  Layered design
+  State Machine model 
+
+Examples from Android System
+  https://source.android.com/devices/camera/index.html
+
+State Machines
+  Media Player
+  https://developer.android.com/reference/android/media/MediaPlayer.html
+
+  Android Activity
+  https://developer.android.com/reference/android/app/Activity.html
+
+Patterns
+  Codify standard solutions to recurring design requirements/problems.
+
+  Descriptions of communicating objects that are customized to solve a general design problem in a particular context.
+
+Why are Design Patterns Important?
+  Design patterns make it easier to reuse successful designs
+
+What are design patterns
+  not code. not implementation.
+  not merely a textual description.
+
+  Patterns are concrete descriptions of solutions.
+  They have to be instantiated in a particular system.
+
+What are Design Patterns
+  There are four essential elements
+    Pattern name
+    Problem
+    Solution
+    Consequences
+
+A very informal example
+  Pattern name:
+    Visit an historically important place in Karnataka.
+
+  Problem and Context:
+    weekend visit. Summer. Karnataka - India. 7 people in the group.
+    Weather is extremely hot and you may fall sick.
+    Have to return by the end of the day.
+    There is a fear that you will be fleeced/cheated.
+    Don't know the local language. But wish to know more.
+
+  Solution:
+    Hire a decent vehicle.
+    Start early - 4am or 5am.
+    Request MU faculty or personnel to accompany.
+       (The cab driver may be adequate)
+    Hire a local guide at the site.
+    Carry enough supplies.
+    Do some homework. Read a bit of history.
+
+  Consequences:
+    Requires coordination with SOIS faculty or MU personnel.
+    Have to buy supplies before previous evening.
+    May not work if more people want to join.
+
+Describing or Documenting the Design Patterns
+  Use a consistent textual format. 
+  The description is divided into 13 sections.
+
+  Pattern Name and Classification
+  Intent
+  Also Known As
+  Motivation
+  Applicability
+  Structure
+  Participants
+  Collaborations
+  Consequences
+  Implementation
+  Sample Code
+  Known Uses
+  Related Patterns
+
+A Quick Example
+  Pattern name: Builder
+  Intent
+    Separate the construction of a complex object from its representation so
+    that the same construction process can create different representations.
+  Motivation
+  Applicability
+    Use the Builder pattern when the algorithm for creating a complex object 
+    should be independent of the parts that make up the object an how they are 
+    assembled.
+    the construction process must allow different representations for the 
+    object that's constructed.
+  Structure
+    Show the UML model.
+  Participants
+    Builder (INameMaker)
+      specifies an abstract interface for creating parts of a Product object.
+    ConcreteBuilder (NameMaker)
+      defines and keeps track of the representation it creates.
+      provides an interface for retrieving the product (e.g., getName, toString).
+    Director (DeviceCatalog)
+      constructs an object using the Builder interface.
+    Product (Name)
+      represents the object under construction.
+      ConcreteBuilder builds the product's internal representation and 
+      defines the process by which it is assembled.
+  Collaborations
+    UML sequence diagram.
+  Consequences
+  Implementation
+  Sample Code
+  Known Uses
+  Related Patterns
+      
+
+
