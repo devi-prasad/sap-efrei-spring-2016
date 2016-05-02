@@ -104,23 +104,26 @@ A Quick Example
   Structure
     Show the UML model.
   Participants
-    Builder (INameMaker)
+    Builder (INameBuilder)
       specifies an abstract interface for creating parts of a Product object.
-    ConcreteBuilder (NameMaker)
+    ConcreteBuilder (StringNameBuilder, JSONNameBuilder)
       defines and keeps track of the representation it creates.
       provides an interface for retrieving the product (e.g., getName, toString).
-    Director (DeviceCatalog)
+    Director (NameCatalog)
       constructs an object using the Builder interface.
     Product (Name)
       represents the object under construction.
       ConcreteBuilder builds the product's internal representation and 
       defines the process by which it is assembled.
+
   Collaborations
     UML sequence diagram.
   Consequences
   Implementation
   Sample Code
+    <see the tenth/src directory>
   Known Uses
+    In Java JDK library, StringBuilder is a builder. String is an immutable product. 
   Related Patterns
       
 
