@@ -1,0 +1,1 @@
+java -ea -cp .:json.jar NameMaker
