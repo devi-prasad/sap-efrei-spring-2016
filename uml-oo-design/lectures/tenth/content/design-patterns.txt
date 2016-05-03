@@ -111,20 +111,43 @@ A Quick Example
       provides an interface for retrieving the product (e.g., getName, toString).
     Director (NameCatalog)
       constructs an object using the Builder interface.
-    Product (Name)
+    Product (Name, JSONObject)
       represents the object under construction.
-      ConcreteBuilder builds the product's internal representation and 
-      defines the process by which it is assembled.
+      ConcreteBuilder builds the product's internal representation. 
+      ConcreteBuilder defines the process by which it is assembled.
 
   Collaborations
     UML sequence diagram.
+  
   Consequences
+    It isolates code for construction and representation.
+      It improves modularity.
+      Builder's interface is oblivious to JSON, XML and such.
+    
+    It gives finer control over the construction process.
+    
+    It allows varying a product's internal representation.
+      Director works with an abstract Builder interface.
+      Concrete builders define the structure of the product.
+      When a new representation is required, define a new concrete Builder.
+
   Implementation
+  
   Sample Code
     <see the tenth/src directory>
+  
   Known Uses
     In Java JDK library, StringBuilder is a builder. String is an immutable product. 
+  
   Related Patterns
-      
+    Abstract Factory
+      Builder builds one object with potentially complex structure in
+      different steps. Abstract 
+      Builder returns the product as a final step, but as far as the
+      Abstract Factory pattern is concerned, the product gets returned
+      immediately.
+
+    Composite
+      Builder often builds a composite.
 
 
