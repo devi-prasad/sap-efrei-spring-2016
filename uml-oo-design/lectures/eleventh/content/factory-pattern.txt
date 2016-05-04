@@ -1,1 +1,57 @@
 Abstract Factory Pattern.
+-------------------------
+Intent
+--------
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+Creational design patterns abstract the instantiation process. They help make a system independent of how its objects are created, composed, and represented.
+
+First, they all encapsulate knowledge about which
+concrete classes the system uses. 
+Second, they hide how instances of these classes are created and put
+together. All the system at large knows about the objects is their interfaces as defined by abstract classes.
+
++------------------+--------------------------------------------------------+
+|Abstract Factory  | Creates an instance of several families of classes.    |
+|Factory Method    | Creates an instance of several derived classes.        |
+|Builder           | Separates object construction from its representation. |
+|Singleton         | A class of which only a single instance can exist.     |
+|Prototype         | A fully initialized instance to be copied or cloned.   |
+|Object Pool       | Avoid expensive acquisition and release of resources   |
+|                  |   by recycling objects that are no longer in use.      |
++------------------+--------------------------------------------------------+
+A hierarchy that encapsulates: many possible "platforms", and the construction of a suite of "products".
+
+Applicability
+---------------
+Use the Abstract Factory pattern when
+  a system should be independent of how its products are created, composed, and represented.
+  a system should be configured with one of multiple families of products.
+  a family of related product objects is designed to be used together, and you need to enforce this constraint.
+
+Participants
+-------------
+AbstractFactory (WidgetFactory)
+  declares an interface for operations that create abstract product objects.
+ConcreteFactory (MotifWidgetFactory, PMWidgetFactory)
+  implements the operations to create concrete product objects.
+AbstractProduct (Window, ScrollBar)
+  declares an interface for a type of product object.
+ConcreteProduct (MotifWindow, MotifScrollBar)
+  defines a product object to be created by the corresponding concrete factory.
+  implements the AbstractProduct interface.
+Client
+  uses only interfaces declared by AbstractFactory and AbstractProduct classes.
+
+Collaborations
+---------------
+Normally a single instance of a ConcreteFactory class is created at run-time. This concrete factory creates product objects having a particular implementation. To create different product objects, clients should use a different concrete factory.
+
+Consequences
+-------------
+It isolates concrete classes.
+It makes exchanging product families easy.
+It promotes consistency among products
+Supporting new kinds of products is difficult.
+  That's because the AbstractFactory interface fixes the set of products that can
+  be created.
