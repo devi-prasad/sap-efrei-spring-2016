@@ -30,7 +30,8 @@ class Client {
     }
     
     private static void testPremium() {
-        testComponents(new PremiumResourceFactory());
+        testComponents(PremiumResourceFactory.getInstance());
+        // testComponents(new PremiumResourceFactory());
     }
     
     public static void main(String[] args) {
