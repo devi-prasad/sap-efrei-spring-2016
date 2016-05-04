@@ -9,7 +9,7 @@ all:
 
 	cd build; javac *.java; cd ..
 
-run:
+test:
 	cd build; java -ea Client; cd ..
 
 clean:
