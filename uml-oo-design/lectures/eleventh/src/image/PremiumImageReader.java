@@ -13,16 +13,12 @@ class PremiumImage implements Image {
         this.image = null;
 	}
 
-    private PremiumImage read() {
+    PremiumImage read() {
         try {
             this.image = ImageIO.read(new File(uri));
         } catch (IOException e) {
         }
         return this;
-    }
-
-    int getState() {
-        return (this.image != null) ? Status.OK : Status.ERROR;
     }
 
     public int getHeight() {
@@ -54,11 +50,11 @@ class PremiumImage implements Image {
 class PremiumImageReader implements ImageReader {
     public Image readJPG(URI uri) {
         PremiumImage image = new PremiumImage(uri);
-        return (image.getState() == Status.OK) ? image : null;
+        return image.read();
     }
 
     public Image readPNG(URI uri) {
         PremiumImage image = new PremiumImage(uri);
-        return (image.getState() == Status.OK) ? image : null;
+        return image.read();
     }
 }
