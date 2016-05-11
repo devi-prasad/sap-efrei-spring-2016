@@ -65,19 +65,19 @@ class EasyMathCalculator implements EasyMath {
         return x % y;
     }
     
-    public boolean save(int reg, int data) {
-    	if (reg > 0 && reg < this.nregs) {
+    public int save(int reg, int data) {
+    	if (reg >= 0 && reg < this.nregs) {
             this.regs[reg] = data;
-            return true;
+            return data;
     	}
 
-        return false;
+        return 0;
     }
     
     public int read(int reg) {
-    	assert(reg > 0 && reg < this.nregs);
-    	
-        if (reg > 0 && reg < this.nregs) {
+    	assert(reg >= 0 && reg < this.nregs);
+
+        if (reg >= 0 && reg < this.nregs) {
             return this.regs[reg];
         }
 

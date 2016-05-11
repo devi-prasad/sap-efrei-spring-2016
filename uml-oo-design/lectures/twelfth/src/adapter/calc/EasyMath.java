@@ -8,6 +8,6 @@ interface EasyMath {
     int div(int x, int y);
     int mod(int x, int y);
 
-    boolean save(int reg, int data);
-    int     read(int reg);
+    int save(int reg, int data);
+    int read(int reg);
 }

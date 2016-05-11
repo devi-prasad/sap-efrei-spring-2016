@@ -19,9 +19,18 @@ class EasyClient {
         assert(calc.inc(calc.add(91, 8)) == 100);
     }
 
+    private static void testRegisters() {
+        EasyMathCalculator calc = EasyMathCalculator.getInstance(4);
+        assert(calc.save(3, calc.inc(1)) == 2);
+        assert(calc.read(3) == 2);
+        assert(calc.save(0, calc.inc(calc.add(91, 8))) == 100);
+        assert(calc.read(0) == 100);
+    }
+
     public static void main(String args[]) {
         testIncDec();
         testAdd();
         testDiv();
+        testRegisters();
     }
 }
