@@ -1,3 +1,4 @@
+/* adaptee */
 interface Calculator {
     Calculator put(int n);
     int        read();
