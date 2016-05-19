@@ -1,0 +1,37 @@
+(1)
+Refer to the Java code used in lecture fourteen. This shows the instantiation
+ of Observer design pattern in a specific context. With respect to this sample 
+ code, answer the following:
+
+    (A) Obtain the complete UML class diagram showing the relationships 
+        between all the interfaces and classes used in the example.
+    
+    (B) Draw an UML sequence diagram representing the behavior of the 
+        method named 'testOneAddRenameRemove' (lines 2-13) in the Client class. 
+
+
+(2)
+Show UML state machine diagrams for the following two requirements: 
+    (A) Device Lock and Unlock.
+        The device locks for 5 minutes if three successive attempts to unlock 
+        the screen fail.
+
+    (B) History States.
+        If the power supply stops when the washing machine is running, it 
+        remembers the state. When the power is supplied again, it starts
+        from the same state where it had left.
+
+(3)
+With respect to the Adapter design pattern
+    (A) State the intent
+    (B) State the applicability
+    (C) Draw the general structure using UML notation
+    (D) State the names of the participants and their roles.
+
+(4)
+Refer to the diagram sync-messages.jpg in the directory 'lectures/fifth'. 
+    (A) Which are the active objects in this interaction?
+    (B) Which are the synchronous calls in the diagram?
+    (C) Which are the asynchronous messages here?
+    (D) What operations are performed in the loop?
+
