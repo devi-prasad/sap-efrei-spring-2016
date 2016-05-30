@@ -1,0 +1,49 @@
+                        School of Information Scienes
+                             Manipal University
+                 --------------------------------------------
+                                Second Test
+
+Duration - 90 minutes (one and half hours)                    Total Marks - 50
+------------------------------------------                    -----------------
+
+(1) [UML Modeling] (25 Marks)
+Draw a meaningful UML class diagram that captures the relationships between 
+elements described below. Please write your assumptions too.
+
+A system consists of numerous processes. Each process owns one or more 
+top-level windows. When the process terminates, all top-level windows owned by 
+that process also go away.
+
+A top-level window may contain one or more child windows. There are four
+kinds of child windows: List View, Text View, and Button. A child window 
+CANNOT contain other child windows or any window as such.
+
+DialogBox is a special kind of window. It can contain other child windows 
+mentioned above. However, a dialog box CANNOT contain another dialog box or 
+top-level windows. 
+
+A top-level window can also contain shapes. There are four kinds of shapes: 
+Line, Circle, Rectangle, and Triangle.
+
++-----------------------------------------------------------------------------+
+
+(2) [Use cases] (25 Marks)
+Identify at least three top-level use cases in the following description of 
+a software alarm clock. Write the use cases that you identify.
+
+Suppose that we wish to develop an alarm clock program. The clock should 
+show the time of day. The user should be able to reset the time by changing 
+hours and minutes fields separately.
+
+It should be possible for the user to (re)set up to three alarms. When an 
+alarm fires, it will play a predefined audio clip. The user can turn it 
+off, or choose to ’snooze’. If the user does not respond at all, the alarm 
+will turn off itself after 2 minutes. ’Snoozing’ means to turn off the 
+sound, only momentarily. When in snooze mode, the alarm fires again after a 
+delay of one minute. 
+
+The program should allow user to adjust the ’snoozing period’. The default 
+snoozing period is one minute, as mentioned above. The program SHOULD NOT 
+allow the user to set snooze period less than one minute.
+
++-----------------------------------------------------------------------------+
